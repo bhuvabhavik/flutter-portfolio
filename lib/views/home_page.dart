@@ -63,6 +63,8 @@ class HomePage extends StatelessWidget {
         child: Column(
           children: [
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -149,6 +151,8 @@ class HomePage extends StatelessWidget {
                     ),
                   ],
                 ),
+                const SizedBox(width: 20),
+                Image.asset(AppAssets.profile1,width: 360,height: 360,),
               ],
             )
           ],

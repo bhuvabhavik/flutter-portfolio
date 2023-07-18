@@ -7,7 +7,7 @@ class AppAssets{
   static String thread = 'assets/images/thread.png';
 
 
-  static String profile1 = 'assets/images/thread.png';
+  static String profile1 = 'assets/images/profile1.jpg';
   static String profile2 = 'assets/images/thread.png';
 
 }
