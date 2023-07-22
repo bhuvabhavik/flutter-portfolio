@@ -21,7 +21,8 @@ class AppButtons{
       focusElevation: 12,
       splashColor: AppColors.lawGreen,
       hoverColor: AppColors.aqua,
-      color: AppColors.themeColor,
+      color: AppColors.robinEdgeBlue,
+      textColor: Colors.black,
       onPressed: onTap,
       child: Text(
         buttonName ,
