@@ -2,9 +2,12 @@ import 'package:animate_do/animate_do.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:my_portfolio_webapp_1/globals/app_assets.dart';
+import 'package:my_portfolio_webapp_1/globals/app_buttons.dart';
 import 'package:my_portfolio_webapp_1/globals/app_colors.dart';
 import 'package:my_portfolio_webapp_1/globals/app_text_styles.dart';
 import 'package:my_portfolio_webapp_1/globals/constants.dart';
+import 'package:my_portfolio_webapp_1/views/about_me.dart';
+import 'package:my_portfolio_webapp_1/widgets/profile_animation.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -53,21 +56,25 @@ class HomePage extends StatelessWidget {
                 ),
                 const SizedBox(width: 30),
               ],
-            ),
+            ),//nav row
           )),
       body: SingleChildScrollView(
         padding: EdgeInsets.only(
-            top: size.height * 0.3,
-            left: size.width * 0.1,
-            right: size.width * 0.1),
+            top: size.height * 0.05,
+            left: size.width * 0.01,
+            right: size.width * 0.01
+        ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
-              crossAxisAlignment: CrossAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
+                  // mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     FadeInDown(
                       duration: Duration(milliseconds: 1200),
@@ -146,44 +153,23 @@ class HomePage extends StatelessWidget {
                     ),
                     Constants.sizedBox(height: 15),
                     FadeInUp(
-                      duration: Duration(milliseconds: 1800),
-                      child: buildMaterialButton(onTap: () {}),
+                      duration: const Duration(milliseconds: 1800),
+                      child: AppButtons.buildMaterialButton(onTap: () {}, buttonName: 'Download Resume',),
                     ),
                   ],
                 ),
-                const SizedBox(width: 20),
-                Image.asset(AppAssets.profile1,width: 360,height: 360,),
+
+                const ProfileAnimation(),
               ],
-            )
+            ),
+            const SizedBox(height: 220,),
+            const AboutMe(), 
           ],
         ),
       ),
     );
   }
 
-  MaterialButton buildMaterialButton({
-    required VoidCallback onTap,
-  }) {
-    return MaterialButton(
-      padding: EdgeInsets.symmetric(horizontal: 18, vertical: 10),
-      shape: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(30),
-        borderSide: BorderSide.none,
-      ),
-      height: 46,
-      minWidth: 130,
-      elevation: 6,
-      focusElevation: 12,
-      splashColor: AppColors.lawGreen,
-      hoverColor: AppColors.aqua,
-      color: AppColors.themeColor,
-      onPressed: onTap,
-      child: Text(
-        "Download Resume",
-        style: AppTextStyles.headerTextStyle(),
-      ),
-    );
-  }
 
   Ink buildSocialButton({required String asset}) {
     return Ink(
