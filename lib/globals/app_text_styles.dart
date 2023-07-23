@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:my_portfolio_webapp_1/globals/app_colors.dart';
 
 class AppTextStyles {
   static TextStyle headerTextStyle() {
@@ -10,11 +11,11 @@ class AppTextStyles {
     );
   }
 
-  static TextStyle montserratStyle({required Color color}) {
+  static TextStyle montserratStyle({required Color color,double fontsize = 24}) {
     return GoogleFonts.montserrat(
       color: color,
       fontWeight: FontWeight.w800,
-      fontSize: 24,
+      fontSize: fontsize,
     );
   }
 
@@ -30,12 +31,20 @@ class AppTextStyles {
     );
   }
 
-  static TextStyle normalStyle() {
+  static TextStyle normalStyle({Color color = Colors.white,}) {
     return GoogleFonts.signikaNegative(
       fontWeight: FontWeight.w500,
       fontSize: 17,
-      color: Colors.white,
+      color: color,
       letterSpacing: 1.5,
+    );
+  }
+
+  static TextStyle comfortaaStyle(){
+    return GoogleFonts.comfortaa(
+      fontSize: 18,
+      fontWeight: FontWeight.w800,
+      color: AppColors.bgColor
     );
   }
 }
