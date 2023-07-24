@@ -3,11 +3,11 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:my_portfolio_webapp_1/globals/app_colors.dart';
 
 class AppTextStyles {
-  static TextStyle headerTextStyle() {
+  static TextStyle headerTextStyle({Color color = Colors.white}) {
     return GoogleFonts.signikaNegative(
       fontSize: 18,
       fontWeight: FontWeight.w600,
-      color: Colors.white,
+      color: color,
     );
   }
 
@@ -44,7 +44,7 @@ class AppTextStyles {
     return GoogleFonts.comfortaa(
       fontSize: 18,
       fontWeight: FontWeight.w800,
-      color: AppColors.bgColor
+      color: Colors.grey,
     );
   }
 }

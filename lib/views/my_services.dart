@@ -104,7 +104,7 @@ class _MyServicesState extends State<MyServices> {
       padding: const EdgeInsets.symmetric(horizontal: 18,vertical: 24),
       decoration: BoxDecoration(
         border: hover ? Border.all(color: AppColors.aqua,width: 3) : null,
-        color: AppColors.themeColor,
+        color: AppColors.bgColor2,
         borderRadius: BorderRadius.circular(30),
 
 

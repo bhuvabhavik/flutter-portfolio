@@ -35,7 +35,7 @@ class _MyPortfolioState extends State<MyPortfolio> {
     return Container(
       width: size.width,
       height: size.height,
-      color: AppColors.themeColor,
+      color: AppColors.bgColor2,
       alignment: Alignment.center,
       padding: EdgeInsets.symmetric(vertical: 30, horizontal: size.width * 0.1),
       child: Column(
@@ -73,12 +73,17 @@ class _MyPortfolioState extends State<MyPortfolio> {
 
                   },
                   onHover: (value){
-                    setState(() {
+                      setState(() {
+                        if(value){
+                          hoveredIndex = index;
+                        }else{
+                          hoveredIndex = null;
+                        }
+                      });
 
-                      if(value){
-                        hoveredIndex = index;
-                      }
-                    });
+
+
+
                   },
                   child: Stack(children: [
                     ClipRRect(
@@ -116,7 +121,13 @@ class _MyPortfolioState extends State<MyPortfolio> {
                               style: AppTextStyles.normalStyle(
                                   color: Colors.black87,),
                               textAlign: TextAlign.center,
+
                             ),
+                            Constants.sizedBox(height: 30),
+                          CircleAvatar(
+                            backgroundColor: Colors.white,
+                            child: Image.asset(AppAssets.shareImg,height: 25,width: 25,),
+                          )
                           ],
                         ),
                       ),

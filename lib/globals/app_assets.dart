@@ -12,5 +12,6 @@ class AppAssets{
   static String codingImg = 'assets/images/programming.png';
   static String graphicsImg = 'assets/images/illustration.png';
   static String videoEditorImg = 'assets/images/video-editor.png';
+  static String shareImg = 'assets/images/share.png';
 
 }

@@ -15,8 +15,9 @@ class AboutMe extends StatelessWidget {
     final Size size = MediaQuery.of(context).size;
 
     return Container(
+      padding: EdgeInsets.symmetric(vertical: 30, horizontal: size.width * 0.1),
       height: size.height,
-      color: AppColors.themeColor,
+      color: AppColors.bgColor2,
       alignment: Alignment.center,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
