@@ -22,11 +22,12 @@ class AppButtons{
       splashColor: AppColors.lawGreen,
       hoverColor: AppColors.aqua,
       color: AppColors.robinEdgeBlue,
-      textColor: Colors.black,
+
       onPressed: onTap,
+      textColor: Colors.black,
       child: Text(
         buttonName ,
-        style: AppTextStyles.headerTextStyle(),
+        style: AppTextStyles.headerTextStyle(color: Colors.black),
       ),
     );
   }
