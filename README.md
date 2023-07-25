@@ -1,16 +1,8 @@
-# my_portfolio_webapp_1
+live link: bhuvabhavik.github.io
+(Under Maintainance as of now some bugs needs to be fixed)
 
-A new Flutter project.
+<img width="1024" alt="Screenshot 2023-07-25 at 8 41 41 PM" src="https://github.com/bhuvabhavik/flutter-portfolio/assets/49744703/bf3d5ae5-7510-493b-a452-ac7a7a2a8cc2">
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img width="1024" alt="Screenshot 2023-07-25 at 8 41 59 PM" src="https://github.com/bhuvabhavik/flutter-portfolio/assets/49744703/11cddae3-78e4-4792-bc30-3f48847bcbd3">
+<img width="1024" alt="Screenshot 2023-07-25 at 9 50 33 PM" src="https://github.com/bhuvabhavik/flutter-portfolio/assets/49744703/77df3099-a3b1-4eba-b96c-fa33d5da27a4">
+<img width="1024" alt="Screenshot 2023-07-25 at 9 50 07 PM" src="https://github.com/bhuvabhavik/flutter-portfolio/assets/49744703/26b50857-fedf-426a-a1df-e934b2a62d22">
