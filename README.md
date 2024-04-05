@@ -1,4 +1,4 @@
-live link: bhuvabhavik.github.io
+live link: www.bhavikbhuva.com
 (Under Maintainance as of now some bugs needs to be fixed)
 
 <img width="1024" alt="Screenshot 2023-07-25 at 8 41 41 PM" src="https://github.com/bhuvabhavik/flutter-portfolio/assets/49744703/bf3d5ae5-7510-493b-a452-ac7a7a2a8cc2">
